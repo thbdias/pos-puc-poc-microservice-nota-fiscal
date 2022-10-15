@@ -16,7 +16,9 @@ public class NotaFiscalController {
 	
 	@PostMapping("/emitir")
 	public String emitirNfe(@RequestBody NotaFiscalDTO notaFiscalDTO) {
-		return "nota emitida";
+		int num = 1 + (int)(Math.random() * ((999 - 1) + 1));
+		
+		return "nota emitida (" + num + ")";
 	}
 
 }
