@@ -6,6 +6,6 @@ import lombok.Data;
 public class NotaFiscalDTO {
 	
 	private String nomeProduto;
-	private String quantidade;
+	private Integer quantidade;
 
 }
